@@ -1,0 +1,9 @@
+.form-control{
+    height: 90px;
+    
+}
+.form-control::placeholder{
+    color: red;
+    
+    
+}
