@@ -2,8 +2,15 @@
     height: 90px;
     
 }
-.form-control::placeholder{
+#resultValue:placeholder-shown{
     color: red;
     
     
+    
+}
+
+
+.col-md-6 {
+    border: 1px solid blue;
+    width: 700px !important;
 }
