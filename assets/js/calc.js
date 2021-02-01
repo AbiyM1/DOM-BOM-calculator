@@ -33,6 +33,11 @@ function clearInput(){
 function calculate(){
 
     document.getElementById("resultValue").value = eval(document.getElementById("inputData").value);
-   
+    
+}
 
+function squareRoot(x){
+
+    document.getElementById("resultValue").value = parseInt(document.getElementById("inputData").value ** 0.5)
+    
 }

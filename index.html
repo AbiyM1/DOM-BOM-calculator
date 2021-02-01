@@ -16,31 +16,31 @@
 
 
 
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1 mx-auto">This is a DOM based calculator</span>
+
+    <nav class="navbar ">
+        <a class="navbar-brand mx-auto" href="#">DOM Manipulation Calculator Demo</a>
     </nav>
 
 
-
-
-
-
-    <div class="container w-50">
+    <div class="container mt-4 w-25">
 
 
         <div class="d-flex flex-column bd-highlight">
 
             <div class="p-2 bd-highlight">
 
-                <div class="input-group mb-3 ">
+                <div class="input-group ">
 
-                    <input type="text" id="inputData" class="form-control mr-auto"
-                        aria-describedby="basic-addon1">
-                    <input type="text" id="resultValue"  placeholder="0"
-                        aria-describedby="basic-addon1">
-
+                    <input type="text" id="resultValue" class="form-control mr-auto" aria-describedby="basic-addon1">
 
                 </div>
+                <div class="input-group d-flex justify-content-around">
+
+                    <input type="text" id="inputData" class="form-control" placeholder="0"
+                        aria-describedby="basic-addon1">
+
+                </div>
+
 
             </div>
 
@@ -54,6 +54,28 @@
             <div class="d-flex flex-row justify-content-between ">
                 <div class="col-md-12 bd-highlight">
                     <div class="d-flex flex-column bd-highlight">
+
+
+
+
+                        <div class="pb-2 bd-highlight">
+
+                            <div class="row d-flex justify-content-end">
+
+
+                                <button type="button" class="col-md-2 mr-1 btn operationButtons"
+                                    onclick="getVal('**')">^</button>
+                                <button type="button" class="col-md-2 mr-1 btn operationButtons"
+                                    onclick="getVal(' **0.5')">sqrt</button>
+                                <button type="button" class="col-md-2 mr-1 btn operationButtons"
+                                    onclick="getVal('/100')">%</button>
+                                <button type="button" class="col-md-2 mr-1 btn operationButtons disabled"
+                                    >#</button>
+                            </div>
+                        </div>
+
+
+
                         <div class="pb-2 bd-highlight">
 
                             <div class="row d-flex justify-content-end">
@@ -64,7 +86,7 @@
                                     onclick="getVal('8')">8</button>
                                 <button type="button" class="col-md-2 mr-1 btn btn-primary"
                                     onclick="getVal('9')">9</button>
-                                <button type="button" class="col-md-2 mr-1 btn btn-primary"
+                                <button type="button" class="col-md-2 mr-1 btn operationButtons"
                                     onclick="getVal('+')">+</button>
                             </div>
                         </div>
@@ -78,7 +100,7 @@
                                     onclick="getVal('5')">5</button>
                                 <button type="button" class="col-md-2 mr-1 btn btn-primary"
                                     onclick="getVal('6')">6</button>
-                                <button type="button" class="col-md-2 mr-1 btn btn-primary"
+                                <button type="button" class="col-md-2 mr-1 btn operationButtons"
                                     onclick="getVal('-')">-</button>
                             </div>
                             <div class="pt-2 bd-highlight">
@@ -91,7 +113,7 @@
                                         onclick="getVal('2')">2</button>
                                     <button type="button" class="col-md-2 mr-1 btn btn-primary"
                                         onclick="getVal('3')">3</button>
-                                    <button type="button" class="col-md-2 mr-1 btn btn-primary"
+                                    <button type="button" class="col-md-2 mr-1 btn operationButtons"
                                         onclick="getVal('*')">*</button>
                                 </div>
                             </div>
@@ -106,7 +128,7 @@
                                         onclick="getVal('0')">0</button>
                                     <button type="button" class="col-md-2 mr-1 btn btn-primary"
                                         onclick="calculate();">=</button>
-                                    <button type="button" class="col-md-2 mr-1 btn btn-primary"
+                                    <button type="button" class="col-md-2 mr-1 btn operationButtons"
                                         onclick="getVal('/')">/</button>
                                 </div>
                             </div>
@@ -119,20 +141,6 @@
                 </div>
 
             </div>
-
-
-
-
-
-
-            <div id="para">This is a text</div>
-
-
-
-
-
-
-
 
 
 

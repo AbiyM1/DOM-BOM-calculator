@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif, serif;
+}
+
 .form-control{
     height: 90px;
     
@@ -5,12 +11,36 @@
 #resultValue:placeholder-shown{
     color: red;
     
-    
-    
 }
 
 
-.col-md-6 {
-    border: 1px solid blue;
-    width: 700px !important;
+.navbar{
+    background-color: #504e4f;
+}
+
+a, a:hover{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+
+
+#resultValue{
+    float: right;
+}
+
+.input-group{
+    border: none;
+    opacity: 0.9;
+
+}
+
+.operationButtons{
+    background-color: rgb(57, 57, 59);
+    color: white;
+}
+
+.operationButtons:hover{
+    background-color: rgb(140, 140, 143);
+    color: white;
 }
